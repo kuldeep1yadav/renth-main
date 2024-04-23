@@ -149,30 +149,19 @@
             <a class="nav-link" href="{% url 'index' %}">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link " href="{% url 'about' %}">about</a>
+            <a class="nav-link " href="{% url 'dashboard:about' %}">about</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link " href="{% url 'hotelowner' %}">owner dashboard</a>
+            <a class="nav-link " href="{% url 'dashboard:hotelowner' %}">owner dashboard</a>
           </li>
 
           <li class="nav-item">
-            <a class="nav-link " href="{% url 'property' %}">Property</a>
+            <a class="nav-link " href="{% url 'dashboard:property' %}">Property</a>
           </li>
 
           <li class="nav-item">
-            <a class="nav-link " href="{% url 'blog' %}">Blog</a>
-          </li>
-
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Login</a>
-            <div class="dropdown-menu">
-              <a class="dropdown-item " href="{% url 'ologin' %}">Owner Login </a>
-              <a class="dropdown-item " href="{% url 'ownerregister' %}">Owner Register </a>
-              <a class="dropdown-item " href="{% url 'login' %}">User Login</a>
-              <a class="dropdown-item " href="{% url 'register' %}">User Register </a>
-              <a class="dropdown-item " href=""> </a>
-            </div>
-          </li>
+            <a class="nav-link " href="{% url 'dashboard:blog' %}">Blog</a>
+          </li> 
         </ul>
       </div>
 
